@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>00page</title>
+    <link rel="stylesheet" href="css2/web_style.css">
+    <link rel="stylesheet" href="css2/mobile_style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js2/js.js"></script>
+    <script src="js2/mouse.js"></script>
+    <script src="js2/drag.js"></script>
+    
+    <!-- icon -->	
+   <link rel="stylesheet" href="axicon/axicon.min.css">
+</head>
+<body class="scroll">
+    <div id="wrap">
+       <div id="paper" class="scroll">
+       <div id="page13" class="page"></div>
+        </div>
+        <div id="paper_bg" class="scroll"></div>
+        <div class="namecardP"><i class="axi axi-cancel"></i></div>
+        <div id="header" class="clear_fix">
+                <h1 id="logo"><a href="index.html" >
+                     <div id="d1" style="display:none;"><img src="images2/logo/logo1.png" alt="logo"></div>
+                    <div id="d2" style="display:none;"><img src="images2/logo/logo2.png" alt="logo"></div>
+                    <div id="d3" style="display:none;"><img src="images2/logo/logo3.png" alt="logo"></div>
+                    <div id="d4" style="display:none;"><img src="images2/logo/logo4.png" alt="logo"></div>
+                    <div id="d5" style="display:none;"><img src="images2/logo/logo5.png" alt="logo"></div>
+                    <div id="d6" style="display:none;"><img src="images2/logo/logo6.png" alt="logo"></div>
+                    <div id="d7" style="display:none;"><img src="images2/logo/logo7.png" alt="logo"></div>
+                 </a></h1>
+                <div id="nav">
+                    <a href="#" >About Us<span></span></a>
+                    <div id="member" >
+                       Member <i></i>
+                           <span>
+                        <a href="kim.html" >
+                            <i></i><i>김새롬<under></under></i> 
+                        </a>
+                        <a href="#" >
+                            <i></i><i>박재철<under></under></i> 
+                        </a>
+                        <a href="#" >
+                            <i></i><i>정혜정<under></under></i> 
+                        </a>
+                        <a href="#" >
+                            <i></i><i>이소연<under></under></i> 
+                        </a>
+                        </span>
+                    </div>
+                </div><!-- nav end -->
+            </div><!-- header end -->
+        <div id="main" class="scroll">
+        <div class="bar_long"></div>
+         <div id="book">
+               <div><span></span>벗어나 <thin>+</thin> 도구가</div>
+               <div><span></span>나눔의 <thin>+</thin> 많은</div>
+               <div><span></span>연하장</div>
+               <div><span></span>WE <thin>+</thin> GET</div>
+               <div><span></span>본의 <thin>+</thin> 전에</div>
+               <div><span></span>연하장</div>
+           </div><!-- book end -->
+          <div id="bg">
+            <div id="box" class="clear_fix scroll">
+               <div>
+                    <a href="out_of_tool.html"><img src="images2/main_img2.jpg" alt=""></a>
+                    <span>
+                        <i>180쪽 | 140*200mm</i>
+                        <i>ISBN: 9788959199761</i>
+                    </span>
+                </div>
+                <div>
+                    <a href="share.html"><img src="images2/main_img3.jpg" alt=""></a>
+                    <span>
+                        <i>180쪽 | 140*200mm</i>
+                        <i>ISBN: 9788959199761</i>
+                    </span>
+                </div>
+                <div>
+                    <a href="letter2018.html"><img src="images2/2018.jpg" alt=""></a>
+                    <span>
+                        <i>2018 연하장</i>
+                        <i>&nbsp;</i>
+                    </span>
+                </div>
+                
+                <div>
+                    <a href="#"><img src="images2/main_img4.png" alt=""></a>
+                    <span>
+                        <i>180쪽 | 140*200mm</i>
+                        <i>ISBN: 9788959199761</i>
+                    </span>
+                </div>
+                <div>
+                    <a href="#"><img src="images2/main_img2.jpg" alt=""></a>
+                    <span>
+                        <i>180쪽 | 140*200mm</i>
+                        <i>ISBN: 9788959199761</i>
+                    </span>
+                </div>
+                <div>
+                    <a href="#"><img src="images2/main_img1.jpg" alt=""></a>
+                    <span>
+                        <i>180쪽 | 140*200mm</i>
+                        <i>ISBN: 9788959199761</i>
+                    </span>
+                </div>
+            </div><!-- box end -->
+            </div>
+        </div><!-- main end -->
+    </div><!-- wrap end -->
+    
+    
+    <script>
+        //page들 랜덤 로테이트
+        $(document).ready(function(){
+            
+            
+            $(".page").each( function() {
+  var rNum = (Math.random()*30)-10;  
+  $(this).css( {   
+    '-webkit-transform': 'rotate('+rNum+'50deg)',
+    '-moz-transform': 'rotate('+rNum+'50deg)'  
+  } );  
+} );//랜덤로테이트 끝
+        
+    $('a').mouseover(function(){
+        $('#bee').css({
+            width: '2.5vw',
+            height: '2.5vw'
+        })
+        $('#bee2').css({
+            width: '2.5vw',
+            height: '2.5vw'
+        })
+        $('#bee3').css({
+            width: '2.5vw',
+            height: '2.5vw'
+        })
+    })
+        $('a').mouseout(function(){
+        $('#bee').css({
+            width: '1vw',
+            height: '1vw'
+        })
+        $('#bee2').css({
+            width: '1vw',
+            height: '1vw'
+        })
+        $('#bee3').css({
+            width: '1vw',
+            height: '1vw'
+        })
+    })
+            
+        /* 화살표 애니메이션 */    
+        function down(){
+          $('#scrdwn').animate({
+            bottom: '3.5vh'
+        },300,function(){
+            $(this).animate({
+                bottom: '5vh'
+            },500,function(){
+                down()
+            })
+        })    
+        } 
+            down()
+        
+            
+            
+})
+    
+   
+    </script>
+    
+</body>
+</html>
